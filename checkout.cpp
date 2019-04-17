@@ -1,5 +1,5 @@
 // Bijaya Shrestha
-// Section 2
+// Section
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -102,11 +102,50 @@ cin >> lName;
 
 return;
 }
+//
+// Book * searchBook(vector<Book *> myBooks, int id) {
+//     return nullptr;
+// }
 
-Book * searchBook(vector<Book *> myBooks, int id) {
-    return nullptr;
+Person * findPerson(vector<Person> myCardholders, int cardID){
+
+  for (int i = 0;i<myBooks.size; i++){
+
+  }
 }
-*/
+
+ void bookCheckout (vector<Book *> & myBooks, vector<Person *> myCardholders){
+
+   int cardID;
+   int bookID;
+   string fName;
+   string lName;
+    string title;
+   for (int i =0, i<myBooks.size; i++)
+   {
+     if (cardID == myCardholders.at(i)->getcardNo){
+     cout<< "Please enter the card ID: "<< endl;
+     cin>> cardID;
+   }
+     else{
+       cout" CardID could not found"<<endl;
+     }
+     cout<<"cardholder:"<<myCardholders.at(i).fullName << endl;
+
+     if (bookID == myBooks.at(i)->getId){
+     cout<<"Please enter the book ID: " << endl;
+     cin>>bookID;
+  }
+     else{
+       cout<< "Book ID could not found<<endl;
+     }
+     cout<<"Title: "<< myBooks.at(i).title<<endl;
+
+   }
+
+
+
+ }
 
 int main()
 {
